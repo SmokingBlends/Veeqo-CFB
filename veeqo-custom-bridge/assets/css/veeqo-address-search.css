@@ -1,0 +1,39 @@
+/* Native-looking dropdown that respects WooCommerce's style */
+.vq-pac-dropdown { 
+    position: absolute; 
+    z-index: 9999; 
+    background: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    width: 100%; 
+    max-height: 250px; 
+    overflow-y: auto; 
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    display: none; 
+    box-sizing: border-box; 
+}
+
+.vq-pac-dropdown li { 
+    padding: 12px; 
+    cursor: pointer; 
+    border-bottom: 1px solid #eee; 
+    font-size: 14px; 
+    color: #333; 
+    line-height: 1.4; 
+    transition: background 0.2s; 
+}
+
+.vq-pac-dropdown li:last-child { 
+    border-bottom: none; 
+}
+
+.vq-pac-dropdown li:hover { 
+    background: #f9f9f9; 
+}
+
+.woocommerce-checkout .form-row { 
+    position: relative; 
+}
